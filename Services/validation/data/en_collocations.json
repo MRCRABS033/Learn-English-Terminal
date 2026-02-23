@@ -1,0 +1,32 @@
+{
+  "verb_prep": {
+    "depend": ["on", "upon"],
+    "listen": ["to"],
+    "look": ["at", "for", "after"],
+    "wait": ["for"],
+    "belong": ["to"],
+    "apply": ["for", "to"],
+    "suffer": ["from"],
+    "focus": ["on"],
+    "participate": ["in"]
+  },
+  "adjective_prep": {
+    "interested": ["in"],
+    "good": ["at"],
+    "afraid": ["of"],
+    "famous": ["for"],
+    "different": ["from", "to"],
+    "similar": ["to"],
+    "responsible": ["for"],
+    "capable": ["of"]
+  },
+  "noun_prep": {
+    "reason": ["for"],
+    "solution": ["to"],
+    "answer": ["to"],
+    "problem": ["with"],
+    "interest": ["in"],
+    "difference": ["between"],
+    "attitude": ["to", "toward"]
+  }
+}
