@@ -1,3 +1,90 @@
+## Manual rapido: como jugar (Modo `Jugar`)
+
+El modo `Jugar` te muestra una palabra en ingles y una oracion de ejemplo. Tu objetivo es adivinar:
+
+1. La traduccion al espanol de la palabra.
+2. Si la oracion esta en `presente`, `pasado` o `futuro`.
+
+### Como iniciar
+
+1. Abre la aplicacion.
+2. En el menu izquierdo, pulsa `Jugar`.
+
+### Que veras
+
+- `Palabra en ingles` (la palabra a estudiar)
+- `Ejemplo en ingles` (una oracion guardada con esa palabra)
+- Un campo para escribir la `traduccion`
+- Un campo para escribir el `tiempo` (`presente`, `pasado` o `futuro`)
+
+### Como responder
+
+- En `Traduccion`, escribe la traduccion esperada en espanol.
+- En `Tiempo`, escribe solo una de estas opciones:
+  - `presente`
+  - `pasado`
+  - `futuro`
+
+### Botones del juego
+
+- `Comprobar`: valida tu respuesta (traduccion + tiempo).
+- `Siguiente`: carga otra palabra aleatoria.
+- `Salir juego`: vuelve a la vista principal.
+
+### Requisitos para que funcione bien
+
+- Debes tener palabras guardadas en el vocabulario.
+- Es recomendable que cada palabra tenga una oracion de ejemplo en ingles.
+- El tiempo se detecta desde la oracion de ejemplo (motor gramatical).
+
+### Nota
+
+Si hay pocas palabras o faltan ejemplos, el juego puede no tener suficientes rondas utiles.
+
+## Que nivel de ingles puedes practicar con este software
+
+Este software esta pensado como una herramienta de practica y correccion gramatical con enfoque pedagogico.
+
+### Cobertura aproximada por nivel
+
+- `A1-A2` (fuerte): estructura basica, sujeto/verbo, preguntas con auxiliar, `to be`, presente simple/continuo, pasado simple, futuro basico, articulos y orden de palabras.
+- `B1` (buena): condicionales basicos, pasiva basica, reported speech basico, gerund/infinitive frecuentes, cuantificadores.
+- `B2` (parcial pero util): perfect tenses, modales avanzados, condicionales avanzados, linking devices, inversion, cleft sentences, relative clauses mas complejas.
+
+### Que significa "parcial" en B2
+
+- El sistema reconoce muchos patrones reales y errores frecuentes.
+- Algunas reglas avanzadas son heuristicas (por forma), asi que en oraciones muy complejas puede haber falsos positivos o falsos negativos.
+
+## Como funciona el software (explicado para usuarios)
+
+Cuando escribes una oracion o guardas una palabra con ejemplo, el programa hace varias cosas:
+
+1. **Analiza la oracion**
+- Separa palabras (tokens).
+- Intenta reconocer su tipo (verbo, sustantivo, adjetivo, etc.).
+- Detecta formas verbales (`work`, `works`, `worked`, `working`) y tiempos (`present`, `past`, `future`, perfect, continuous, etc.).
+
+2. **Aplica reglas gramaticales**
+- Revisa estructura, tiempos, auxiliares, modales, articulos, cuantificadores, collocations y otras reglas.
+- Genera avisos cuando detecta un patron probablemente incorrecto.
+
+3. **Muestra feedback pedagogico**
+- `Warnings`: errores gramaticales detectados por reglas.
+- `Pattern warnings / hints`: avisos por patrones de uso comunes.
+- `Lexical hints`: pistas de vocabulario/collocations (si hay datos disponibles).
+
+4. **Usa tu vocabulario guardado para practicar**
+- La tabla central guarda palabras y ejemplos.
+- Al seleccionar una palabra puedes editarla.
+- El modo `Jugar` reutiliza esas palabras para entrenar traduccion + tiempo verbal.
+
+### Importante (como interpretar los resultados)
+
+- El software **no es un parser sintactico completo** ni reemplaza a un profesor.
+- Es una herramienta de entrenamiento y apoyo: muy buena para errores frecuentes y practica guiada.
+- Si una oracion es muy larga o avanzada, revisa el feedback como ayuda, no como verdad absoluta.
+
 # TerminalLearnEnglish - Rule Engine (English)
 
 ## Estado actual del motor
